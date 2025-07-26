@@ -14072,14 +14072,14 @@ input[data-autocompleted] {
  .p-dropdown-panel {
     margin-top: 85px;
     margin-left: 279px;
- }  
+ }
 
 
   @media (min-width: 320px) and (max-width:425px) {
     .p-dropdown-panel {
         margin-top: 85px;
         margin-left: 79px;
-     }  
+     }
   }
 
   @media (min-width:425px) and (max-width:768px){
@@ -14188,7 +14188,7 @@ input[data-autocompleted] {
 }
 
 .bgbackground {
-    background: url('./assets/Images/Background.png');
+    background: url('./assets/Images/Fardeen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -1,0 +1,410 @@
+/* dashboard_CSS */
+
+.user-img-card {
+    width: 10rem;
+    height: 10rem;
+}
+
+.buttons-tab button {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 5px 0px;
+    color: var(--bg-base-color);
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.buttons-tab button:before,
+.buttons-tab button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--bg-base-color);
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons-tab button:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons-tab button:after {
+    left: 0;
+    bottom: 0;
+}
+
+.buttons-tab button span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.buttons-tab button span:before,
+.buttons-tab button span:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: var(--bg-base-color);
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons-tab button span:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.buttons-tab button span:after {
+    left: 0;
+    bottom: 0;
+}
+
+.buttons-tab button p {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons-tab button p:before,
+.buttons-tab button p:after {
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    z-index: 1;
+    left: 0;
+}
+
+.buttons-tab button p:before {
+    content: attr(data-title);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buttons-tab button p:after {
+    content: attr(data-text);
+    top: 150%;
+    color: var(--bg-base-color);
+}
+
+.buttons-tab button:hover:before,
+.buttons-tab button:hover:after {
+    width: 100%;
+}
+
+.buttons-tab button:hover span {
+    z-index: 1;
+}
+
+.buttons-tab button:hover span:before,
+.buttons-tab button:hover span:after {
+    height: 100%;
+}
+
+.buttons-tab button:hover p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.buttons-tab button:hover p:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buttons-tab button.start {
+    background-color: var(--bg-base-color);
+    box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.buttons-tab button.start p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.buttons-tab button.start p:after {
+    color: white;
+    transition: all 0s ease;
+    content: attr(data-start);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: start 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes start {
+    from {
+        top: -50%;
+    }
+}
+
+.buttons-tab button.start:hover:before,
+.buttons-tab button.start:hover:after {
+    display: none;
+}
+
+.buttons-tab button.start:hover span {
+    display: none;
+}
+
+.buttons-tab button:active {
+    outline: none;
+    border: none;
+}
+
+.buttons-tab button:focus {
+    outline: 0;
+}
+
+.tb-btn2 {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    color: var(--bg-base-color);
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    outline: none !important;
+    background: #fff !important;
+    border: none !important;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.tb-btn2:hover {
+    color: black;
+}
+
+.tb-btn2:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.tb-btn2:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* .dashboard-card{
+ width: 15.5rem;
+ height: 15.5rem;
+ border-radius: .8rem;
+} */
+
+.iconBox {
+    width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.border-base-bottom-2 {
+    border-bottom: 2px solid var(--bg-base-color) !important;
+}
+
+.border-left-0 {
+    border-top-left-radius: 0px !important;
+}
+
+.border-right-0 {
+    border-top-right-radius: 0px !important;
+}
+
+.border-bottom-left-0 {
+    border-bottom-left-radius: 0px !important;
+}
+
+.border-bottom-right-0 {
+    border-bottom-right-radius: 0px !important;
+}
+
+.user-boxs {
+    /* position: relative; */
+    bottom: 3rem;
+    padding: .5rem 1rem;
+    z-index: 10;
+}
+
+.user-images {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 3px dashed #eee;
+    border-right: 3px dashed var(--bg-base-color);
+    border-left: 3px dashed var(--bg-base-color);
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.userProfile-images {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 3px dashed #eee;
+    border-right: 3px dashed var(--bg-base-color);
+    border-left: 3px dashed var(--bg-base-color);
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.userBoxs img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+    padding: .3rem;
+}
+
+.user-image-fits {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cards {
+    position: relative;
+    transition: 0.4s ease-out;
+    overflow: visible;
+    border: 1px solid var(--bg-base-color);
+}
+
+.cards-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-buttons {
+    transform: translate(-50%, -100%);
+    width: 60%;
+    border-radius: .3rem;
+    border: none;
+    background-color: var(--bg-base-color);
+    color: #fff;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+
+/*Text*/
+
+.text-titles {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Hover*/
+
+.cards:hover {
+    border-color: var(--bg-base-color);
+    box-shadow: 0 0.15rem 1.75rem 0 var(--hover-color) !important;
+}
+
+.cards:hover .card-buttons {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.card-buttons-box {
+    width: 14rem;
+    padding: .8rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    background-color: rgba(0, 123, 255, .6);
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.card-buttons-box:hover {
+    box-shadow: 0 0.15rem 1.75rem 0 var(--hover-color);
+}
+
+.card-buttons-box:active {
+    transform: translateY(-1px);
+}
+
+.display-modal h5 {
+    width: 100%;
+}
+
+.search-wrapper {
+    border: none;
+}
+
+.search-wrapper .chip {
+    border-radius: 20px;
+    align-items: center;
+    background: var(--bg-base-color);
+    color: #fff;
+    display: inline-flex;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    padding: 9px 16px;
+}
+
+.search-wrapper .chip .icon_cancel {
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin-left: 8px;
+    width: 20px;
+}
+
+.checkBox {
+    width: 25px;
+    height: 25px;
+}

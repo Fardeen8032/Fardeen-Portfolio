@@ -6,13 +6,15 @@ import ProjectRoute from './Routes/ProjectRoute'
 export default function App() {
 
   return (
-    <>
-        <>
-            <ProjectRoute/>
 
 
-        </>
+        <div className="min-h-screen bg-[#DAE3E7]">
+          <ProjectRoute/>
+        </div>
 
-    </>
+
+
+
+
   )
 }

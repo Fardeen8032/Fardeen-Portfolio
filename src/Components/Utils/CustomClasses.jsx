@@ -2,7 +2,7 @@ export const inputClass = `block p-2.5 bg-white  w-full text-md font-tb font-med
 
 export const formbutton = "flex w-full justify-center font-tbPop rounded-md bg-base-color-blue px-3 py-2.5 text-base font-semibold leading-6 text-white shadow-sm hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
 
-export const pageClass = `pl-[80px] py-4 pr-[5rem] rounded-md space-y-4 lg:pl-[20rem]`
+export const pageClass = `pl-[80px] pr-[5rem] rounded-md space-y-4 lg:pl-[20rem]`
 
 export const pageHeader = `font-bold font-tb text-4xl lg:pl-4 pl-0 text-base-color`
 

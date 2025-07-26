@@ -1,12 +1,12 @@
 import { XMarkIcon } from "@heroicons/react/16/solid";
-import { useState } from "react";
 import { HambergerMenu } from "iconsax-react";
+import { useState } from "react";
 
 export default function NavSettings({ mobileSidebar, setMobileSidebar, nLogout }) {
   const [openSlide] = useState(false);
 
   return (
-    <div className="flex items-center justify-between  py-5 pt-24 lg:pt-5 pb-5 lg:ml-[230px] lg:pl-[90px] lg-10">
+    <div className="flex items-center justify-between pb-5 lg:ml-[230px] lg:pl-[90px] lg-10">
       <div
         className={`flex items-center justify-between md:justify-evenly fixed top-0 right-0 py-4 px-4 md:rounded-bl-[77px] ${openSlide ? "z-0" : "z-50"
           } md:px-3 pl-[36px] pr-[36px] w-full md:w-[23rem] lg:w-[30rem]`}

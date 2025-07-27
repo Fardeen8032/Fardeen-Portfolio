@@ -1,5 +1,4 @@
-import { Building, Element3, Profile2User, Setting2, Briefcase, UserTag, UserOctagon, User,Note, Chart1,People, Convertshape, DocumentText, Code, TickSquare, ArchiveBook, Warning2, Personalcard, Menu, HierarchySquare2, ProfileTick, Teacher } from "iconsax-react";
-import { Users } from  "lucide-react"
+import { Element3, Briefcase, Code, Teacher, Book1 } from "iconsax-react";
 import { useEffect, useState } from "react";
 
 export const useThemeColor = () => {
@@ -40,6 +39,11 @@ export const SuperAdminSidebarApi = () => {
       title: "Projects",
       icon: <Code size="32" color={themeColor}/>,
       link: "/Projects",
+    },
+    {
+      title: "Certification",
+      icon: <Book1 size="32" color={themeColor}/>,
+      link: "/Certification",
     }
   ]
 }

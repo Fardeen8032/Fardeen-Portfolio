@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom';
-import { AdminSidebarApi, OtherRoleSidebarApi, SuperAdminSidebarApi } from './SideBarApi';
+import { NavLink } from 'react-router-dom';
+import { SuperAdminSidebarApi } from './SideBarApi';
 import SideBarMenu from './SideBarMenu';
-import swal from 'sweetalert';
+import Fardeen from '../../assets/Images/Fardeen.jpg';
 import NavSettings from '../Navbar/NavSettings';
 import "../Sidebar/SideBar.css";
 
 export default function SideBar({ children }) {
-    const [value, setValue] = useState(false);
     const [mobileSidebar, setMobileSidebar] = useState(false);
     const [isActiveLink, setIsActiveLink] = useState(false);
-    const navigate = useNavigate()
-
 
 
     return (
@@ -32,11 +29,17 @@ export default function SideBar({ children }) {
                             </div>
                         </div> */}
 
-                        <div className="d-flex justify-content-center align-items-center gap-3 flex-column">
+                        <div className="d-flex justify-content-center align-items-center gap-3 flex-column mt-[15px]">
                             {/*<div className={isActiveLink ? "px-3 py-1 transition-all duration-700" : "px-5 py-3 transition-all duration-700"}>
                                 <img src={logoImagesURL} className={isActiveLink ? " object-contain w-16 h-auto transition-all duration-700 rounded-md" : 'object-contain w-[180px] h-auto transition-all duration-700 rounded-md'} />
                             </div>*/}
-
+                            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center overflow-hidden">
+                                <img
+                                src={Fardeen}
+                                alt="Profile"
+                                className="w-full h-full object-cover rounded-full"
+                                />
+                            </div>
                         </div>
 
                         <div className="d-flex flex-column gap-2 overflow-scroll sidebarScroll sidebar-tabs">

@@ -1,4 +1,4 @@
-import { Element3, Briefcase, Code, Teacher, Book1 } from "iconsax-react";
+import { Element3, Briefcase, Code, Teacher, Book1, DocumentText } from "iconsax-react";
 import { useEffect, useState } from "react";
 
 export const useThemeColor = () => {
@@ -31,9 +31,9 @@ export const SuperAdminSidebarApi = () => {
       link: "/Experience",
     },
     {
-      title: "Education",
+      title: "Qualification",
       icon: <Teacher size="28" color={themeColor}/>,
-      link: "/Education",
+      link: "/Qualification",
     },
     {
       title: "Projects",
@@ -41,9 +41,9 @@ export const SuperAdminSidebarApi = () => {
       link: "/Projects",
     },
     {
-      title: "Certification",
-      icon: <Book1 size="32" color={themeColor}/>,
-      link: "/Certification",
+      title: "Publication",
+      icon: <DocumentText size="32" color={themeColor}/>,
+      link: "/Publication",
     }
   ]
 }

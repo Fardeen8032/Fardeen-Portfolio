@@ -24,31 +24,31 @@ export default function Home() {
           </div>
           {/* Profile Details */}
           <div className="flex-1 w-full">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-              <div>
+            <div className="flex flex-col items-center text-center md:items-start md:text-left md:flex-row md:justify-between gap-2">
+              <div className="flex flex-col justify-center w-full md:w-auto">
                 <h2 className="text-xl sm:text-2xl lg:text-3xl text-[#49515a] font-bold mt-2">
                   Fardeen Nulwala
                 </h2>
-                <p className="text-base sm:text-lg font-semibold text-[#778492]">
+                <p className="text-sm md:text-lg md:text-left font-semibold text-[#778492]">
                   Software Engineer
                 </p>
-                <p className="font-semibold text-[#b0b7c3] text-sm sm:text-base">
+                <span className="font-semibold text-[#b0b7c3] md:text-left text-sm md:text-lg">
                   at Techiebears pvt ltd
-                </p>
+                </span>
               </div>
-              <div className="flex items-center mt-2 md:mt-0">
+              <div className="flex items-center mt-2 md:mt-0 justify-center md:justify-start w-full md:w-auto">
                 <button className={formBtn1}>
                   <a
                     href="/fardeen_resume.pdf"
                     download="fardeen_resume"
-                    className="no-underline text-inherit hover:no-underline hover:text-inherit"
+                    className="no-underline text-inherit hover:no-underline hover:text-inherit text-sm md:text-lg"
                   >
                     Resume
                   </a>
                 </button>
               </div>
             </div>
-            <div className="flex flex-wrap gap-2 mt-6">
+            <div className="flex flex-wrap gap-2 mt-6 justify-center md:justify-start">
               <a
                 href="https://www.linkedin.com/in/fardeen-nulwala3"
                 target="_blank"
@@ -72,7 +72,7 @@ export default function Home() {
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-[#49515a] font-bold mb-2">
             About Me
           </h2>
-          <p className="text-sm sm:text-base">
+          <p className="text-sm md:text-lg">
             As a Software developer at Techiebears pvt ltd, I am highly driven and detail oriented, seeking a challenging role as a Full stack developer. My passion for applying theoretical concepts to practical scenarios motivates me to make a meaningful impact in the field. I am excited to contribute my knowledge and skills to real world projects and take on new challenges to grow both personally and professionally.
           </p>
         </div>
@@ -82,15 +82,15 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2 mb-3">
             <Message size="22" color="#49515a" />
-            <p className="text-base break-all">ferdeen12nulwala@gmail.com</p>
+            <p className="text-sm md:text-lg break-all">ferdeen12nulwala@gmail.com</p>
           </div>
           <div className="flex items-center gap-2 mb-3">
             <Call size="22" color="#49515a"/>
-            <p className="text-base break-all">+91 9619048110</p>
+            <p className="text-sm md:text-lg break-all">+91 9619048110</p>
           </div>
           <div className="flex items-center gap-2">
             <Location size="22" color="#49515a" />
-            <p className="text-base">Mumbai, India.</p>
+            <p className="text-sm md:text-lg">Mumbai, India.</p>
           </div>
         </div>
       </section>

@@ -13,30 +13,30 @@ export default function Experience() {
           <div>
             {/* TechieBears */}
             <div className="mb-6">
-              <h3 className="text-xs sm:text-sm md:text-base text-[#404040] font-semibold">
+              <h3 className="text-sm md:text-lg text-[#404040] font-semibold">
                 Software Engineer -{" "}
-                <span className="text-[#999]">TechieBears Pvt Ltd</span>
-                <span className="text-[#999] ml-2 text-xs sm:text-sm md:text-base">
+                <span className="text-[#999] text-sm md:text-lg">TechieBears Pvt Ltd</span>
+                <span className="text-[#999] ml-2 text-sm md:text-lg">
                   Nov 2024 - Present
                 </span>
               </h3>
-              <p className="text-xs sm:text-sm md:text-base text-justify mt-2">
+              <p className="text-sm md:text-lg text-justify mt-2">
                 Developed, implemented and tested website for many different clients based on requirements. Communicated with the client, analyzed user requirements and translate client needs into web application. Worked on emerging technologies like ReactJS, Tailwind CSS, NodeJS and Mongodb. Collaborated with backend developers and other team members to deliver the project successfully.
               </p>
-              <p className="mt-1 text-xs sm:text-sm md:text-base text-[#778492]">
+              <p className="mt-1 text-sm md:text-lg text-[#778492]">
                 Skills - ReactJS Tailwind CSS NodeJS MongoDB
               </p>
             </div>
             {/* Desi Dhaba */}
             <div className="mb-6">
-              <h3 className="text-xs sm:text-sm md:text-base text-[#404040] font-semibold">
+              <h3 className="text-sm md:text-lg text-[#404040] font-semibold">
                 Freelance Web Developer -{" "}
-                <span className="text-[#999] text-xs sm:text-sm md:text-base">Desi Dhaba</span>
-                <span className="text-[#999] ml-2 text-xs sm:text-sm md:text-base">
+                <span className="text-[#999] text-sm md:text-lg">Desi Dhaba</span>
+                <span className="text-[#999] ml-2 text-sm md:text-lg">
                   Aug 2024 - Oct 2024
                 </span>
               </h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#778892] mt-2">
+              <p className="text-sm md:text-lg text-[#778892] mt-2">
                 Link -{" "}
                 <a
                   href="https://desidhaba.onrender.com/"
@@ -47,26 +47,26 @@ export default function Experience() {
                   https://desidhaba.onrender.com/
                 </a>
               </p>
-              <p className="text-xs sm:text-sm md:text-base text-justify mt-2">
+              <p className="text-sm md:text-lg text-justify mt-2">
                 Developed a website using HTML, CSS, JavaScript, ReactJS. Designed and implemented a responsive website to enhance user experience.
               </p>
-              <p className="mt-1 text-xs sm:text-sm md:text-base text-[#778492]">
+              <p className="mt-1 text-sm md:text-lg text-[#778492]">
                 Skills : HTML, CSS, JavaScript, React.js
               </p>
             </div>
             {/* Aptitech Education */}
             <div>
-              <h3 className="text-xs sm:text-sm md:text-base text-[#404040] font-semibold">
+              <h3 className="text-sm md:text-lg text-[#404040] font-semibold">
                 Full Stack Developer Intern -{" "}
-                <span className="text-[#999] text-xs sm:text-sm md:text-base">Aptitech Education</span>
-                <span className="text-[#999] ml-2 text-xs sm:text-sm md:text-base">
+                <span className="text-[#999] text-sm md:text-lg">Aptitech Education</span>
+                <span className="text-[#999] ml-2 text-sm md:text-lg">
                   July 2023 – December 2023
                 </span>
               </h3>
-              <p className="text-xs sm:text-sm md:text-base text-justify mt-2">
+              <p className="text-sm md:text-lg text-justify mt-2">
                 Designed, developed and implemented Ecommerce web application based on requirements. Designed a user-friendly product listing page, detailed product view and add to cart functionality for convenient and efficient shopping.
               </p>
-              <p className="mt-1 text-xs sm:text-sm md:text-base text-[#778492]">
+              <p className="mt-1 text-sm md:text-lg text-[#778492]">
                 Skills : HTML CSS JavaScript React.js Node.js MongoDB RESTful API
               </p>
             </div>

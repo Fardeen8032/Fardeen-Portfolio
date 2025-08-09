@@ -16,16 +16,16 @@ export default function Publication() {
           <div>
             {/* TechieBears */}
             <div className="mb-6">
-              <h3 className="text-xs sm:text-sm md:text-base text-[#404040] font-semibold">
+              <h3 className="text-sm md:text-lg text-[#404040] font-semibold">
                Customer Review Analysis And Identifying Spam Reviews -{" "}
-                <span className="text-[#999] ml-2 text-xs sm:text-sm md:text-base">
+                <span className="text-[#999] text-sm md:text-lg">
                   IJARSCT
                 </span>
-                <span className="text-[#999] ml-2 text-xs sm:text-sm md:text-base">
+                <span className="text-[#999] text-sm md:text-lg ml-2">
                   Jan 2023 - May 2023
                 </span>
               </h3>
-              <p className="text-xs sm:text-sm md:text-base text-justify mt-2">
+              <p className="text-sm md:text-lg text-justify mt-2">
                 This project aims to create a customer review analysis for an Airlines company that can perform sentiment analysis on
                 customer reviews and identify spam reviews. The sentiment analysis is done using the text blob library, which is a
                 popular natural language processing library. The text classification for identifying spam reviews is done using machine
@@ -40,14 +40,14 @@ export default function Publication() {
                 framework to handle the back-end processing and provide the data for the UI. The end goal is to provide a userfriendly, accessible, and effective dashboard for analyzing customer reviews and identifying spam reviews for the
                 Airlines company
               </p>
-              <p className="mt-1 text-xs sm:text-sm md:text-base text-[#778492]">
+              <p className="mt-1 text-sm md:text-lg text-[#778492]">
                 Skills - HTML CSS Javascript Python Flask Machine Learning NLP
               </p>
             </div>
             <div className="flex items-center mt-2 md:mt-0">
                 <button className={`${formBtn1} flex items-center space-x-2`} onClick={() => window.open("https://ijarsct.co.in/Paper8908.pdf", "_blank")}>
-                  <p className="no-underline text-inherit hover:no-underline hover:text-inherit font-[600] text-base ">Publication</p>
-                    <Icon icon="uil:external-link-alt" width="24" height="24" className="relative top-[-2px]" color="#FFFFFF" />
+                  <p className="no-underline text-inherit hover:no-underline hover:text-inherit font-[600] text-sm md:text-lg ">Publication</p>
+                    <Icon icon="uil:external-link-alt"  className="w-5 h-5 sm:w-7 sm:h-6 relative top-[-2px]" color="#FFFFFF" />
                 </button>
             </div>
           </div>

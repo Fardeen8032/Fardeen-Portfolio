@@ -73,7 +73,7 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-sm md:text-lg">
-            As a Software developer at Techiebears pvt ltd, I am highly driven and detail oriented, seeking a challenging role as a Full stack developer. My passion for applying theoretical concepts to practical scenarios motivates me to make a meaningful impact in the field. I am excited to contribute my knowledge and skills to real world projects and take on new challenges to grow both personally and professionally.
+            Passionate Software Engineer with experience in building full-stack web applications using React.js, Node.js, MySQL, and MongoDB. Skilled in developing responsive, user-friendly, and scalable solutions.Currently working at Techiebears Pvt Ltd, delivering client-based projects with modern frontend technologies like React.js, Tailwind CSS, and Redux.Proficient in JavaScript, HTML, CSS, REST APIs, Git.
           </p>
         </div>
         <div className="bg-white rounded-2xl shadow-md p-6">
